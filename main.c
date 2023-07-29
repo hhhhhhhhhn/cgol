@@ -73,6 +73,10 @@ inline void update_cells() {
 	char* temp = front;
 	front = back;
 	back = temp;
+
+	temp = front_with_clear;
+	front_with_clear = back_with_clear;
+	back_with_clear = temp;
 };
 
 void init_cells() {
